@@ -76,7 +76,7 @@ class LinkedList:
         prev = curr
         curr = nextnode
       self.head = prev
-
+    
     def sum_Of_Consecutive(self):
       temp = self.head
 
