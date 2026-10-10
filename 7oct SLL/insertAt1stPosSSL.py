@@ -32,7 +32,6 @@ class LinkedList:
             temp.next = new_node
             return
 
-
     def display(self):
         temp = self.head
         while temp:
