@@ -35,18 +35,19 @@ class LinkedList:
             print("Node value is not present in the list")
             return
 
-    # count occurrence of a number
-    def count_occurrence(self, num):
-        count = 0
-        current = self.head
+        # deleting first node
+        if temp.prev == None:
+            self.head = temp.next
 
-        while current:
-            if current.data == num:
-                count += 1
+            if self.head:
+                self.head.prev = None
 
-            current = current.next
+        # deleting middle or last node
+        else:
+            temp.prev.next = temp.next
 
-        return count
+            if temp.next:
+                temp.next.prev = temp.prev
 
 
     def display(self):
