@@ -1,6 +1,5 @@
 # 19 Oct 2026
 # Doubly Linked List Delete Operation
-# Count occurrence of a number in DLL
 
 class Node:
     def __init__(self, val):
